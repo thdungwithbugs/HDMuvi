@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="footer__socials">
           <a
-            href="https://github.com/thdungwithbugs"
+            href="https://github.com/thdungwithbugs/HDMuvi"
             target="_blank"
             rel="noreferrer"
           >
