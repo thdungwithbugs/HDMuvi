@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#170319] font-body px-5 text-white;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    @apply mx-auto;
+  }
+  //   .page-container-fluid {
+  //     max-width: 1440px;
+  //     @apply mx-auto;
+  //   }
+  .movie-list .swiper-slide {
+    width: 300px;
+    height: auto;
+  }
+  .banner .swiper {
+    height: 100%;
+  }
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .selected{
+    @apply text-primary
+  }
+}
+//CSS Loading skeleton
+.skeleton{
+  background-color: #eee;
+  background-image: linear-gradient(
+    -45deg, #DDDDDD, #F0F0F0, #DDDDDD, #F0F0F0
+  );
+  background-size: 200% 100%;
+  animation: 0.75s shine linear infinite;
+}
+@keyframes shine{
+  0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
