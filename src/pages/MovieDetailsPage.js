@@ -24,11 +24,11 @@ const MovieDetailsPage = () => {
           }}
         ></div>
       </div>
-      <div className="w-full h-[400px] max-w-[800px] mx-auto -mt-[200px] relative z-10 pb-10">
+      <div className="w-full h-[400px] max-w-[800px] mx-auto -mt-[200px] relative z-10 pb-10 ">
         <img
           src={tmdbAPI.imageOriginal(poster_path)}
           alt=""
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover rounded-xl shadow-[-20px_-15px_60px_1px_rgba(0,0,0,1)]"
         />
       </div>
       <h1 className="text-center text-3xl text-white font-bold mb-10">
